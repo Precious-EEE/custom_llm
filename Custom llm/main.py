@@ -9,8 +9,7 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 custom_llm = Blueprint('custom_llm', __name__)
-#os.environ["OPENAI_API_KEY"] = "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"
-#client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+
 client = OpenAI(api_key="OPENAI_API_KEY")
 
 
